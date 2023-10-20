@@ -136,7 +136,7 @@ a:hover {
 }
 
 .skill {
-    height: 200px;
+    height: 150px;
     width: 200px;
     padding: 2rem;
     margin: 2rem;
@@ -195,7 +195,7 @@ label {
     width: 80px;
 }
 
-img {
+.projectimg {
     height: 200px;
     width: auto;
 }
@@ -240,6 +240,71 @@ img {
     cursor: pointer;
 }
 
+/*  styling the gallery */
+
+.gridcontainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 0.4rem;
+    margin: 3rem auto;
+}
+
+.gridimg {
+    max-height: 200px;
+    width: auto;
+    object-fit: cover;
+}
+
+.one {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 2 / span 1;
+    grid-row: 1;
+}
+
+.three {
+    grid-column: 3/ span 1;
+    grid-row: 1;
+}
+
+.four {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+}
+
+.five {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+}
+
+.six {
+    grid-column: 3 / span 1;
+    grid-row: 3;
+}
+
+.seven {
+    grid-column: 1 / span 1;
+    grid-row: 3;
+}
+
+.eight {
+    grid-column: 3 / span 1;
+    grid-row: 2;
+}
+
+.nine {
+    grid-column: 2 / span 1;
+    grid-row: 3;
+}
+
 @media (max-width:1200px) {
     body {
         background-color: black;
@@ -263,7 +328,7 @@ img {
         margin: 1.5rem 0;
         border-radius: 10px;
         left: 0;
-        top: 70px;
+        top: 130px;
         width: 100%;
     }
     ul.responsive li {
