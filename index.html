@@ -3,12 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -20,12 +17,6 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
     />
     <link
       rel="stylesheet"
@@ -33,7 +24,7 @@
     /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Tricks</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <header>
@@ -89,15 +80,18 @@
         <h2>Skills</h2>
         <div class="skills">
           <div class="skill">
-            <span class="material-symbols-outlined"> html </span>
+            <span id="html" class="material-symbols-outlined"> html </span>
+            <progress id="htmlskill" value="80" max="100"></progress>
           </div>
         <div class="skills">
           <div class="skill">
             <span class="material-symbols-outlined"> javascript</span>
+            <progress id="jsskill" value="35" max="100"></progress>
           </div>
         <div class="skills">
           <div class="skill">
             <span class="material-symbols-outlined"> css </span>
+            <progress id="cssskill" value="70" max="100"></progress>
           </div>
         </div>
       </section>
@@ -126,7 +120,7 @@
           <button id="send" class="btn">Send</button>
         </div>
       </form>
-      <button class="btn" id="backToTop">
+      <button class="btn" id="backTop">
         <span class="material-symbols-outlined"> north </span>
       </button>
     </footer>

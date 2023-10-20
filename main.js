@@ -1,12 +1,9 @@
-const backButton = document.querySelector('#backToTop');
+const backButton = document.querySelector('#backTop');
 const mobButton = document.querySelector('.mobile')
 const nav = document.querySelector('nav ul')
-const menuItems = document.querySelectorAll('nav ul li a')
+const menu = document.querySelectorAll('nav ul li a')
 const header = document.querySelector('header')
 const body = document.querySelector('body')
-const modButton = document.querySelector('#dontclick')
-const modal = document.querySelector('.modal')
-const closingButton = document.querySelector('.xmodal')
 
 // browser onscroll event trigger
 window.onscroll = function () {scrollFunction()};
@@ -32,7 +29,7 @@ const getToTop = () => {
 }
 
 const mobMenu = () => {
-    for(const item of menuItems) {
+    for(const item of menu) {
         item.addEventListener('click', mobMenu)
     }
     if(nav.classList.contains('responsive')){
@@ -48,5 +45,3 @@ const modalBox = () => {
 
 backButton.addEventListener('click', getToTop)
 mobButton.addEventListener('click', mobMenu)
-modButton.addEventListener('click', modalBox)
-closingButton.addEventListener('click', modalBox)

@@ -56,24 +56,24 @@ section {
 }
 
 h1 {
-    font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 75px;
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     margin-left: 4rem;
 }
 
 h2 {
-    margin: 1rem 0 1.5rem;
+    margin: 0.5rem 0 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
 h3 {
     margin: 1rem 0 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -86,8 +86,8 @@ header li {
 }
 
 ul li {
-    font-size: 1.1rem;
-    padding: 5rem 2rem;
+    font-size: 1.5rem;
+    padding: 5rem 1rem;
     margin: 0.1rem 0.1rem;
     text-transform: uppercase;
 }
@@ -103,28 +103,66 @@ ul li a:hover {
     text-underline-offset: 0.5em;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+}
+
 .projects {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .project {
     border: 0.1px solid;
     width: 400px;
     height: auto;
-    padding: 1rem;
-    margin: 2rem;
+    padding: 1.5rem;
+    margin: 1rem;
 }
 
 .skills {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    height: 200px;
+    width: 200px;
+    padding: 2rem;
+    margin: 2rem;
+    border: 0.5px solid;
+}
+
+.material-symbols-outlined {
+    font-size: 40px;
+}
+
+progress {
+    background-color: black;
+    color: white;
+}
+
+progress::-webkit-progress-bar {
+    background-color: white;
+} 
+
+progress::-webkit-progress-value {
+    background-color: #c7d3c1;
+    box-shadow: 1px 1px 5px 3px rgba(36, 35, 35, 0.8);
 }
 
 form {
-    padding: 5rem 5rem 2rem;
+    padding: 3rem 5rem 1rem;
 }
 
 input, 
@@ -185,7 +223,7 @@ img {
     margin: 1rem 0;
 }
 
-#backToTop {
+#backTop {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
