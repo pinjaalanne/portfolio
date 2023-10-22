@@ -1,3 +1,4 @@
+// getting the data
 const backButton = document.querySelector('#backTop');
 const mobButton = document.querySelector('.mobile')
 const nav = document.querySelector('nav ul')
@@ -5,9 +6,10 @@ const menu = document.querySelectorAll('nav ul li a')
 const header = document.querySelector('header')
 const body = document.querySelector('body')
 
-// browser onscroll event trigger
+// this is browser onscroll event trigger
 window.onscroll = function () {scrollFunction()};
 
+// function for scrolling, displaying back to top button and header
 function scrollFunction() {
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
         backButton.style.display = "block";
@@ -23,11 +25,13 @@ function scrollFunction() {
       }
     }
 
+// back to top function
 const getToTop = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 
+// function for mobile menu
 const mobMenu = () => {
     for(const item of menu) {
         item.addEventListener('click', mobMenu)
@@ -39,9 +43,6 @@ const mobMenu = () => {
     }
 }
 
-const modalBox = () => {
-    modal.classList.toggle('visible')
-}
-
+// even listeners for buttons
 backButton.addEventListener('click', getToTop)
 mobButton.addEventListener('click', mobMenu)
